@@ -1,1 +1,5 @@
-{ "message": null }
+{
+  "message": "Windsor is down for brief maintenance.",
+  "downAt": 1701184024,
+  "downForHours": 2
+}
