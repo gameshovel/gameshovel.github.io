@@ -66,4 +66,7 @@
   div {
     @apply mb-2;
   }
+  body {
+    @apply mx-4;
+  }
 }
