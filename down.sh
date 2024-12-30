@@ -14,7 +14,7 @@ DOWN_FOR_HOURS=$2
 DOWN_AT=$(date +%s)
 
 # Update the status.json file
-cat <<EOF > status.json
+cat <<EOF > src/status.json
 {
   "message": "$MESSAGE",
   "downAt": $DOWN_AT,
@@ -22,11 +22,11 @@ cat <<EOF > status.json
 }
 EOF
 
-echo "status.json has been updated."
+echo "src/status.json has been updated."
 
 # Commit the changes to Git
-git add status.json
-git commit -m "Update status.json: $MESSAGE, down for $DOWN_FOR_HOURS hours starting at $DOWN_AT"
+git add src/status.json
+git commit -m "Update src/status.json: $MESSAGE, down for $DOWN_FOR_HOURS hours starting at $DOWN_AT"
 git push
 
 echo "Changes have been committed and pushed to Git."
